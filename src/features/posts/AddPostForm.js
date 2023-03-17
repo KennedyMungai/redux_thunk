@@ -19,7 +19,7 @@ const AddPostForm = () =>
     const onContentChanged = e => setContent(e.target.value)
     const onAuthorChanged = e => setUserId(e.target.value)
 
-    const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
+    const canSave = [title, content, userId].every(Boolean) && addRequestStatus == 'idle'
 
     const onSavePostClicked = () =>
     {
