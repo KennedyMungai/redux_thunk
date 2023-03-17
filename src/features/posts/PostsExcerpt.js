@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PostsExcerpt = () =>
+const PostsExcerpt = ({ post }) =>
 {
     return (
         <div>PostsExcerpt</div>
