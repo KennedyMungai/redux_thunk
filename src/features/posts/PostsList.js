@@ -22,14 +22,10 @@ const PostsList = () =>
 
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
 
-    // const renderedPosts = orderedPosts.map(post => (
-
-    // ))
 
     return (
         <section>
             <h2>Posts</h2>
-            {/* {renderedPosts} */}
         </section>
     )
 }
