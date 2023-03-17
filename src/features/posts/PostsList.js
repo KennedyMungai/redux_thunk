@@ -9,6 +9,8 @@ import { useEffect } from "react";
 const PostsList = () =>
 {
     const posts = useSelector(selectAllPosts)
+    const postsStatus = useSelector(getPostsStatus)
+    const postsError = useSelector(getPostsError)
 
     const dispatch = useDispatch()
 
