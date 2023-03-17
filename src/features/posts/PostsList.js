@@ -10,6 +10,8 @@ const PostsList = () =>
 {
     const posts = useSelector(selectAllPosts)
 
+    const dispatch = useDispatch()
+
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
 
     const renderedPosts = orderedPosts.map(post => (
