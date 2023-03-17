@@ -18,7 +18,7 @@ const PostsList = () =>
     {
         if (postsStatus === 'idle')
         {
-            dispatch(fetchPosts)
+            dispatch(fetchPosts())
         }
     }, [postsStatus, dispatch])
 
