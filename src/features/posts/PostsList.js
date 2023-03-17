@@ -3,6 +3,7 @@ import { selectAllPosts } from "./postsSlice";
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
+import { useEffect } from "react";
 
 
 const PostsList = () =>
