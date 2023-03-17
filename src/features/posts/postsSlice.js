@@ -112,6 +112,18 @@ const postsSlice = createSlice({
                 state.status = 'failed'
                 state.error = action.error.message
             })
+            .addCase(addNewPost.fulfilled, (state, action) => 
+            {
+                action.payload.userId = Number(action.payload.userId)
+                action.payload.date = new Date().toISOString()
+                action.payload.reactions = {
+                    thumbsUp: 0,
+                    wow: 0,
+                    heart: 0,
+                    rocket: 0,
+                    coffee: 0
+                }
+            })
     }
 })
 
