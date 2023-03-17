@@ -14,6 +14,15 @@ const PostsList = () =>
 
     const dispatch = useDispatch()
 
+    useEffect(() =>
+    {
+        if (postsStatus === 'idle')
+        {
+            dispatch(fetchPosts)
+        }
+    }, [postsStatus, dispatch])
+
+
     const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
 
     const renderedPosts = orderedPosts.map(post => (
