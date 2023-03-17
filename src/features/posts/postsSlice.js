@@ -2,7 +2,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 
 const initialState = {
-    post: [],
+    posts: [],
     status: 'idle',     //'idle' | 'loading' | 'succeeded' | 'failed'
     error: null
 }
