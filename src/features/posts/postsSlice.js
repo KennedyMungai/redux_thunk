@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice, nanoid } from "@reduxjs/toolkit";
 
+const POSTS_URL = "https://jsonplaceholder.typicode.com/posts"
 
 const initialState = {
     posts: [],
