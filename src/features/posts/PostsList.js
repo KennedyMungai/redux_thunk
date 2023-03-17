@@ -21,9 +21,6 @@ const PostsList = () =>
     }, [postsStatus, dispatch])
 
 
-    const orderedPosts = posts.slice().sort((a, b) => b.date.localeCompare(a.date))
-
-
     return (
         <section>
             <h2>Posts</h2>
